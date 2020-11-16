@@ -1,0 +1,100 @@
+/* custom styles here */
+:root {
+  --text-h1: 2.25rem;
+  --text-h2: 1.875rem;
+  --text-h3: 1.5rem;
+  --text-h4: 1.25rem;
+  --text-h5: 1.125rem;
+  --text-h6: 1rem;
+  --text-body: 1rem;
+  --text-small: 0.725rem;
+
+  --color-background: #ffffff;
+  --color-foreground: #5c5c5c;
+  --color-surface: #ffffff;
+  --color-primary: #000000;
+  --color-secondary: #7222e3;
+  --color-success: #38a169;
+  --color-error: #e53e3e;
+  --color-warning: #ebdf3f;
+  --color-neutral: #a6a6a6;
+  --color-accent: #ff3db8;
+
+  --focus-border-default: #3182ce;
+  --focus-shadow-default: rgba(66, 153, 225, 0.3);
+
+  --shadow-rested-layer-1-x: 0px;
+  --shadow-rested-layer-1-y: 1px;
+  --shadow-rested-layer-1-blur: 3px;
+  --shadow-rested-layer-1-spread: 0;
+  --shadow-rested-layer-1-color: rgba(0, 0, 0, 0.1);
+
+  --shadow-rested-layer-2-x: 0px;
+  --shadow-rested-layer-2-y: 1px;
+  --shadow-rested-layer-2-blur: 2px;
+  --shadow-rested-layer-2-spread: 0;
+  --shadow-rested-layer-2-color: rgba(0, 0, 0, 0.06);
+
+  --shadow-elevated-layer-1-x: 0px;
+  --shadow-elevated-layer-1-y: 20px;
+  --shadow-elevated-layer-1-blur: 25px;
+  --shadow-elevated-layer-1-spread: -5px;
+  --shadow-elevated-layer-1-color: rgba(0, 0, 0, 0.1);
+
+  --shadow-elevated-layer-2-x: 0px;
+  --shadow-elevated-layer-2-y: 10px;
+  --shadow-elevated-layer-2-blur: 10px;
+  --shadow-elevated-layer-2-spread: -5px;
+  --shadow-elevated-layer-2-color: rgba(0, 0, 0, 0.04);
+
+  --shadow-rested: var(--shadow-rested-layer-1-x) var(--shadow-rested-layer-1-y) var(--shadow-rested-layer-1-blur)
+      var(--shadow-rested-layer-1-spread) var(--shadow-rested-layer-1-color),
+    var(--shadow-rested-layer-2-x) var(--shadow-rested-layer-2-y) var(--shadow-rested-layer-2-blur)
+      var(--shadow-rested-layer-2-spread) var(--shadow-rested-layer-2-color);
+  --shadow-elevated: var(--shadow-elevated-layer-1-x) var(--shadow-elevated-layer-1-y)
+      var(--shadow-elevated-layer-1-blur) var(--shadow-elevated-layer-1-spread) var(--shadow-elevated-layer-1-color),
+    var(--shadow-elevated-layer-2-x) var(--shadow-elevated-layer-2-y) var(--shadow-elevated-layer-2-blur)
+      var(--shadow-elevated-layer-2-spread) var(--shadow-elevated-layer-2-color);
+
+  --border-radius-default: 0.375rem;
+
+  --border-width: 1px;
+  --border-radius: 0.375rem;
+  --border-color: #dedede;
+}
+
+* {
+  position: relative;
+}
+
+.truncate-over-two-line {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 2;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 16px;
+  height: 16px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 4px;
+  background: #edf2f7;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #cbd5e0;
+  border-radius: 3px;
+  border: 3px solid #edf2f7;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #a0aec0;
+}
